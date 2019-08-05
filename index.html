@@ -27,8 +27,11 @@
         <li class="col-md-4 p-2"><span class="fa fa-envelope"></span>
             <p class="ml-2">contact@utech.co.sz</p>
         </li>
-        <li class="col-md-5 p-2"><span class="fa fa-location-arrow"></span>
-            <p class="ml-2">find us on google maps</p>
+        <li class="col-md-5 p-2">
+            <a href="#location-section">
+                <span class="fa fa-location-arrow"></span>
+                <p class="ml-2">find us on google maps</p>
+            </a>
         </li>
     </ul>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top nav animated fadeInUp" id="nav">
@@ -443,8 +446,8 @@
         </div>
     </div>
 
-    <div class="site-section bg-light" id="news-section">
-        <div class="container">
+    <div class="site-section bg-light" id="location-section">
+        <div class="container mb-5">
             <div class="row mb-5 ">
                 <div class="col-md-7 section-title text-center mx-auto">
                     <h2 class="title text-primary mb-3">Location</h2>
@@ -452,7 +455,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 mb-4">
-
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
@@ -714,6 +717,30 @@
                 }
             }
             stickyFillInit();
+
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = {
+                    lat: -26.762412,
+                    lng: 31.933099
+                };
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                    });
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSphH-aKkiIXjJX4XrAciAxA-XiWroguw&callback=initMap">
         </script>
 </body>
 
