@@ -249,7 +249,7 @@ Hero slider style
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     left: 0;
-    top: 50vh;
+    top: 50%;
     color: #fff;
     margin: -40px 0 0;
     border-radius: 0;
@@ -259,7 +259,7 @@ Hero slider style
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
     right: 0;
-    top: 50vh;
+    top: 50%;
     color: #fff;
     margin: -40px 0 0;
     border-radius: 0;
@@ -302,27 +302,7 @@ Hero slider style
         margin-bottom: 25px;
     }
 
-    .owl-carousel .owl-nav button.owl-next {
-        top: auto;
-        margin: 0;
-        bottom: 0px;
-    }
 
-    .owl-carousel .owl-nav button.owl-next:hover {
-        background: #ff3547;
-    }
-
-    .owl-carousel .owl-nav button.owl-prev {
-        top: auto;
-        margin: 0;
-        bottom: 0px;
-    }
-
-    .owl-dots {
-        bottom: 50px;
-        left: 50px;
-        right: 50px;
-    }
 }
 
 @media (min-width: 768px) {
