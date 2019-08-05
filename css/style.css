@@ -302,7 +302,17 @@ Hero slider style
         margin-bottom: 25px;
     }
 
+    .owl-carousel .owl-nav button.owl-next {
+        opacity: 0;
+    }
 
+    .owl-carousel .owl-nav button.owl-prev {
+        opacity: 0;
+    }
+
+    .owl-dots {
+        opacity: 0;
+    }
 }
 
 @media (min-width: 768px) {
